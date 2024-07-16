@@ -13,16 +13,13 @@ int digitQueries(long long k) {
     long long endInterval = 9;
 
     long long pow10 = 10;
-
     long long digits = 1;
 
     while (true) {
         startInterval = endInterval + 1; 
         digits++;
         endInterval += 9*pow10*digits;
-
-        if (k > endInterval) break;
-
+        if (k <= endInterval) break;
         pow10 *= 10;
     }
 
