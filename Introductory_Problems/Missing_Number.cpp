@@ -1,3 +1,4 @@
+// Bit Manipulation Method
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -17,4 +18,6 @@ int main () {
     }
  
     cout << c;
+
+    return 0;
 }

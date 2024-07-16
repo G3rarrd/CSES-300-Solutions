@@ -4,9 +4,10 @@ def repetitions(s):
     maxRep = 1
     while(i < n):
         j = i + 1
+        
         while (j < n and s[i] == s[j] ) :
             j += 1
-        
+            
         maxRep = max(maxRep, (j - i) )
         i = j
         
