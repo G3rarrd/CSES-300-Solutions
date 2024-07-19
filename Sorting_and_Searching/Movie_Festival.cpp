@@ -34,7 +34,8 @@ int main() {
         cin >> a, cin >> b;
         timeFrames.emplace_back(make_pair(a, b));
     }
-
+    
+    // Sort according to the end times
     sort(timeFrames.begin(), timeFrames.end(), comp());
     cout << movieFestival(timeFrames, n);
     return 0;
